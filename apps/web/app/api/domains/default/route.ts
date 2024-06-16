@@ -48,7 +48,7 @@ export const PUT = withWorkspace(async ({ req, workspace }) => {
       projectId: workspace.id,
     },
     data: {
-      injmonks: defaultDomains.includes("injmonks.site"),
+      injmonks: defaultDomains.includes("l.injmonks.site"),
       chatgpt: defaultDomains.includes("chatg.pt"),
       sptifi: defaultDomains.includes("spti.fi"),
       gitnew: defaultDomains.includes("git.new"),

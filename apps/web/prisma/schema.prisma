@@ -138,7 +138,7 @@ model ProjectInvite {
 
 model DefaultDomains {
   id          String  @id @default(cuid())
-  injmonks    Boolean @default(true)
+  injmonkssite Boolean @default(true)
   chatgpt     Boolean @default(true)
   sptifi      Boolean @default(true)
   gitnew      Boolean @default(true)

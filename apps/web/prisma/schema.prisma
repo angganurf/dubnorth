@@ -93,7 +93,7 @@ model Project {
   slug String  @unique
   logo String?
 
-  plan              String   @default("free")
+  plan              String   @default("pro")
   stripeId          String?  @unique // Stripe subscription ID
   billingCycleStart Int // day of the month when the billing cycle starts
   stripeConnectId   String?  @unique // for Stripe Connect
@@ -138,7 +138,7 @@ model ProjectInvite {
 
 model DefaultDomains {
   id          String  @id @default(cuid())
-  dubsh       Boolean @default(true)
+  injmonks    Boolean @default(true)
   chatgpt     Boolean @default(true)
   sptifi      Boolean @default(true)
   gitnew      Boolean @default(true)
